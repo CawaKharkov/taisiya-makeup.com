@@ -1,0 +1,156 @@
+{% extends ":layouts:base.html.twig" %}
+
+{% block title %}AppBundle:BlogPost:view{% endblock %}
+
+{% import ":macro:picture_slide.html.twig" as pictures %}
+{% import ":macro:blog_posts.html.twig" as blog_posts %}
+
+{% block content %}
+    <div class="content-area pvt0">
+
+
+        <!-- Fashion Box -->
+        <div class="section-full pv0 fn-section-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        {{ pictures.bottom([1,2,3]) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Fashion Box -->
+
+        <div class="section-full pv9 pvb0">
+            <div class="container">
+                <div class="row sticky-parent fs-with-sidebar fn-with-sidebar">
+                    <div class="col-sm-9 sticky-column fs-content">
+
+                        <div class="theiaStickySidebar">
+
+                            <div class="fs-grid-posts">
+                                <div class="fs-post-filter fn-post-filter">
+                                    <h4 data-title="Politics">Last blog posts</h4>
+                                    <!-- <ul>
+                                        <li class="active"><a href="javascript:;">Fashion</a></li>
+                                        <li><a href="#">World</a></li>
+                                        <li><a href="#">Photography</a></li>
+                                        <li><a href="#">Vogue</a></li>
+                                    </ul> -->
+                                </div>
+                                <div class="fs-grid-viewport">
+                                    <div class="row">
+                                        {{ blog_posts.posts([1,2]) }}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- //theiaStickySidebar -->
+
+                    </div>
+                    <div class="col-sm-3 sticky-column fs-sidebar">
+
+                        <div class="theiaStickySidebar">
+
+                            <div class="widget widget-aboutme">
+                                <h5 class="widget-title">About Me</h5>
+                                <p>
+                                    <img src="/images/fashion/widget-about.jpg" alt="about image">
+                                </p>
+                                <h5>UI/UX Designer</h5>
+                                <p class="about-text">Hello I’m Jenny Kurto author of Letter town blog. This is my
+                                    personal
+                                    space which is like to share others.</p>
+                                <p class="read-more"><a href="single.html">read more</a></p>
+                            </div>
+
+                            <div class="widget widget_search">
+                                <h5 class="widget-title">Subscribe</h5>
+                                <form action="./" class="search_form" method="get">
+                                    <input type="text" placeholder="Email address" required="" name="s">
+                                    <input type="submit" value="Sign Up">
+                                </form>
+                            </div>
+
+                            <div class="widget">
+                                <h5 class="widget-title">Latest</h5>
+                                <div class="fs-recent-post">
+                                    <div class="fs-rp-item">
+                                        <div class="entry-image">
+                                            <!--<a href="single.html"><img src="images/blog/fs-thumb.jpg" alt="recent post"></a>-->
+                                            <a href="single.html"><img src="/images/fashion/widget-post.jpg"
+                                                                       alt="recent post"></a>
+                                        </div>
+                                        <div class="entry-rp">
+                                            <div class="entry-meta">
+											<span>
+												<a href="single.html">1:16 PM</a>
+											</span>
+                                                <span>
+												<a href="single.html">Junior Santos</a>
+											</span>
+                                            </div>
+                                            <h4>
+                                                <a href="single.html">What does Drake’s whiskey say about him?</a>
+                                            </h4>
+                                            <p class="read-more">
+                                                <a href="single.html">read the article</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="fs-rp-item no-thumb">
+                                        <div class="entry-rp">
+                                            <div class="entry-meta">
+											<span>
+												<a href="single.html">1:16 PM</a>
+											</span>
+                                                <span>
+												<a href="single.html">Junior Santos</a>
+											</span>
+                                            </div>
+                                            <h4>
+                                                <a href="single.html">What does Drake’s whiskey say about him?</a>
+                                            </h4>
+                                            <p class="read-more">
+                                                <a href="single.html">read the article</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="fs-rp-item no-thumb">
+                                        <div class="entry-rp">
+                                            <div class="entry-meta">
+											<span>
+												<a href="single.html">1:16 PM</a>
+											</span>
+                                                <span>
+												<a href="single.html">Junior Santos</a>
+											</span>
+                                            </div>
+                                            <h4>
+                                                <a href="single.html">What does Drake’s whiskey say about him?</a>
+                                            </h4>
+                                            <p class="read-more">
+                                                <a href="single.html">read the article</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- <div class="widget">
+                                <a href="entertainment.html">
+                                    <img src="images/pages/banner-v-en.jpg" alt="banner" class="full-size">
+                                </a>
+                            </div>  -->
+
+                        </div>
+                        <!-- //theiaStickySidebar -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

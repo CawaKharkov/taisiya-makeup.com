@@ -1,0 +1,12 @@
+{# Сообщение юзеру после регистрации #}
+
+{% block email_header %}
+    SecretCloset
+{% endblock %}
+
+{% block email_body %}
+    <p>{{ 'confirm.emai.message'|trans }}</p>
+    <a href="{{ site_url }}/confirm?hash={{ hash }}">
+        {{ 'confirm'|trans }}
+    </a>
+{% endblock %}

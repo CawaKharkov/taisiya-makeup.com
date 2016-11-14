@@ -1,0 +1,18 @@
+{# Юзер забыл пароль #}
+
+{% block email_header %}
+    Temporary PIN: <strong>{{ userPin.plainPassword }}</strong>
+{% endblock %}
+
+{% block email_body %}
+    <p>Dear SecretCloset user,</p>
+    <p>
+        You have asked us to reset your forgotten password. To complete the process, please use this temporary password at your next App sign-in and immediately change it in 'Settings' to your new and secure password.
+    </p>
+    <p>
+        Please note that SecretCloset (Ronte Limited) does not save passwords created by its users at the time of first sign-in during password reset process. In the event of arising subsequent issues with signing into the App, you will need to repeat the above-mentioned procedure once again.
+    </p>
+    <p>
+        <strong>{{ userPin.plainPassword }}</strong>
+    </p>
+{% endblock %}

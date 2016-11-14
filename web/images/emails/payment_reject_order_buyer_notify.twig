@@ -1,0 +1,19 @@
+{# Сообщение покупателю об отмененной оплате #}
+
+{% block email_header %}
+    Request DECLINED!
+{% endblock %}
+
+{% block email_body %}
+    <p>Dear SecretCloset user,</p>
+    <p>
+        We would like to inform you that the SecretCloset App system has cancelled your recent transaction due some issues with payment processing. Thus, the reserved transaction intended for this purchase has been VOIDED and your request to buy this fabulous item has been annulled.
+    </p>
+    <p>
+        We kindly ask that you go onto the SecretCloset App and verify the status of your remaining request(s).
+    </p>
+    <p>
+        We hope that you will soon find another fabulous alternative to that items which you have earlier requested to buy. We are mega-thrilled that you have chosen our fashion-forward SecretCloset App for your social shopping.
+    </p>
+
+{% endblock %}

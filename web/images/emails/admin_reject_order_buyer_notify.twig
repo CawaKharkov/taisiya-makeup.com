@@ -1,0 +1,9 @@
+{# Сообщение покупателю о том что админ удалил заЯвку на покупку #}
+
+{% block email_header %}
+    Request rejected!
+{% endblock %}
+
+{% block email_body %}
+    <p>Buy request for an item id:{{ itemId }} made by {{ username }}, was rejected by administration.</p>
+{% endblock %}

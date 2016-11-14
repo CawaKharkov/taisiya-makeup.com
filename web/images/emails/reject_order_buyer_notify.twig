@@ -1,0 +1,23 @@
+{# Сообщение покупателю об отмененном заказе #}
+
+{% block email_header %}
+    Request DECLINED!
+{% endblock %}
+
+{% block email_body %}
+    <p>Dear SecretCloset user,</p>
+    <p>
+        We regret to inform you that your request to buy one of the fabulous items sold by another SecretCloset fashionista has just been DECLINED. The reasons for this action may be as follows:
+        <br>
+        - the seller is not ready at this time to sell one of their fabulous items (try again later);
+        <br>
+        - the item has recently been sold to another SecretCloset user.
+    </p>
+    <p>
+        We kindly ask that you go onto the SecretCloset App and verify the status of your remaining purchase request(s).
+    </p>
+    <p>
+        We hope that you will soon find another fabulous alternative to that items which you have earlier requested to buy. We are mega-thrilled that you have chosen our fashion-forward SecretCloset App for your social shopping.
+    </p>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% macro posts(data) %}
+    {% for post in data %}
+        <div class="col-sm-12">
+            <div class="fs-grid-item fs-large">
+                <a href="single.html" class="fs-entry-image">
+                    <img src="/images/fashion/blog1.jpg" alt="blog image">
+                </a>
+                <a href="#" class="label ">Hottest</a>
+                <div class="fs-entry-meta">
+                    <span><a href="single.html">Celebrity</a></span>
+                    <span><a href="single.html">May 18, 2016</a></span>
+                    <span><a href="single.html">Junior Santos</a></span>
+                </div>
+                <h3>
+                    <a href="single.html">You Have To See This Badass Prom Dress Inspired By Beyonce's Met Gala Gown</a>
+                </h3>
+                <p class="read-more">
+                    <a href="{{ path('app_blogpost_view',{slug:'title'}) }}">read the article</a>
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+{% endmacro %}
+
+<!--  <div class="col-sm-12">
+                                        <div class="fs-grid-item fs-large">
+                                            <a href="single.html" class="fs-entry-image">
+                                                <img src="images/fashion/blog2.jpg" alt="blog image">
+                                            </a>
+                                            <a href="javascript:;" class="label label-yellow">Hottest</a>
+                                            <div class="fs-entry-meta">
+                                                <span><a href="single.html">Celebrity</a></span>
+                                                <span><a href="single.html">May 18, 2016</a></span>
+                                                <span><a href="single.html">Junior Santos</a></span>
+                                            </div>
+                                            <h3>
+                                                <a href="single.html">You Have To See This Badass Prom Dress Inspired By Beyonce's Met Gala Gown</a>
+                                            </h3>
+                                            <p class="read-more">
+                                                <a href="single.html">read the article</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="fs-grid-item fs-large">
+                                            <a href="single.html" class="fs-entry-image">
+                                                <img src="images/fashion/blog3.jpg" alt="blog image">
+                                            </a>
+                                            <a href="javascript:;" class="label label-pink">Hottest</a>
+                                            <div class="fs-entry-meta">
+                                                <span><a href="single.html">Celebrity</a></span>
+                                                <span><a href="single.html">May 18, 2016</a></span>
+                                                <span><a href="single.html">Junior Santos</a></span>
+                                            </div>
+                                            <h3>
+                                                <a href="single.html">You Have To See This Badass Prom Dress Inspired By Beyonce's Met Gala Gown</a>
+                                            </h3>
+                                            <p class="read-more">
+                                                <a href="single.html">read the article</a>
+                                            </p>
+                                        </div> -->

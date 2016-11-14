@@ -1,0 +1,20 @@
+{# Сообщение продавцу о новом заказе #}
+
+{% block email_header %}
+    You have a buyer request in SecretCloset
+{% endblock %}
+
+{% block email_body %}
+    <p>Dear SecretCloset user,</p>
+
+    <p>
+        We are thrilled to inform you that you have recently got a request from a buyer for one of your items on sale. We kindly ask you to provide a response to a prospective buyer as soon as possible so that one of your items can soon find a new and loving home.
+    </p>
+
+    {% if type is defined and type in ['shipping', 'shipping_bid'] %}
+        <p>
+            Before you finalize the transaction please make sure that your mobile device has the latest version of our SecretCloset App. Our users can now opt for a delivery option in certain countries.
+        </p>
+    {% endif %}
+
+{% endblock %}

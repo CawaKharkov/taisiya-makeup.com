@@ -1,0 +1,15 @@
+{# Сообщение админу о новом тикете #}
+
+{% block email_header %}
+    New ticket # {{ ticket.id }}
+{% endblock %}
+
+{% block email_body %}
+    <ul>
+        <li>Username: {{ ticket.sender.username }}</li>
+        <li>Created at: {{ ticket.createdAt|date('d.m.Y H:m:i') }}</li>
+    </ul>
+    <p>
+        {{ ticket.message }}
+    </p>
+{% endblock %}

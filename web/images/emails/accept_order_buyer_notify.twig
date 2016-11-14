@@ -1,0 +1,12 @@
+{# Сообщение покупателю о том что одобрен запрос на покупку #}
+
+{% block email_header %}
+    Your request has been APPROVED
+{% endblock %}
+
+{% block email_body %}
+    <p>Dear SecretCloset user,</p>
+    <p>
+        We are mega-thrilled to inform you that your request to buy one of the fabulous items sold by another SecretCloset fashionista has just been APPROVED. We kindly ask you go onto the SecretCloset App and verify the status of your purchase request(s).
+    </p>
+{% endblock %}

@@ -1,0 +1,13 @@
+{# Сообщение продавцу о новом коментарие его лота #}
+
+{% block email_header %}
+{% endblock %}
+
+{% block email_body %}
+    <p>Dear {{ seller }}!</p>
+    <p>
+        User <b>{{ username }}</b>, left a comment on your item <b>id:{{ itemId }}</b>:
+    </p>
+    <p><i><q>{{ message }}</q></i></p>
+
+{% endblock %}

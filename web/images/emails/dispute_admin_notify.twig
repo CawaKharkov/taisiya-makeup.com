@@ -1,0 +1,9 @@
+{# Сообщение администратору о открытом споре #}
+
+{% block email_header %}
+    New dispute, order # {{ order.id }}
+{% endblock %}
+
+{% block email_body %}
+    <p>Username: {{ order.user.username }}</p>
+{% endblock %}
